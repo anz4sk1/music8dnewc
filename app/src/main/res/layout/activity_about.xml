@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.db.sql.financecredits.AboutActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textAboutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textAboutTitle"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textAboutTitletext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:textColorLink="#007BFF"
+        android:text="@string/textAboutText" />
+
+    <TextView
+        android:id="@+id/textLikeGP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/likeApp"
+        android:textColorLink="#007BFF"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>
