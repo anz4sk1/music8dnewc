@@ -4,7 +4,7 @@ import android.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
-import com.finance.creditcard.R;
+import com.financeapp.mfo.R;
 public class PrivacyActivity extends AppCompatActivity {
 
     @Override

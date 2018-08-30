@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Кредитная карта</string>
+    <string name="app_name">Кредит на карту</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -14,9 +14,14 @@
     <string name="more">Подробнее</string>
     <string name="privacyPolicy">Политика конфиденциальности</string>
 
+    <string name="metrika">900b9bd1-5127-40c0-9d34-d13ff31e6e1e</string>
+
     <string name="name">Имя</string>
+    <string name="sname">Отчество</string>
     <string name="surname">Фамилия</string>
     <string name="phone">Моб. телефон</string>
+    <string name="date">Дата рождения</string>
+    <string name="mail">Электронная почта</string>
     <string name="requestcard">ЗАКАЗАТЬ КАРТУ</string>
 
     <string name="title1">Здравствуйте!</string>
@@ -36,7 +41,7 @@
     \n\n<a href="http://kesh.online/policy.html">Политика конфиденциальности</a>
     \n\n
     \n\nВсе права защищены (с)</string>
-    <string name="likeApp"><a href="https://play.google.com/store/apps/details?id=com.finance.creditcard">Оценить приложение в магазине Google Play.</a></string>
+    <string name="likeApp"><a href="https://play.google.com/store/apps/details?id=com.financeapp.mfo">Оценить приложение в магазине Google Play.</a></string>
 
     <string name="text3fields">Для оформления заявки заполните всего три поля!
 

@@ -8,7 +8,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import com.finance.creditcard.R;
+import com.financeapp.mfo.R;
 
 public class ThanksActivity extends AppCompatActivity {
 

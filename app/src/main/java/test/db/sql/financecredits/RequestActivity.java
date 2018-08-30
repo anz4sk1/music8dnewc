@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.finance.creditcard.R;
+import com.financeapp.mfo.R;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,9 +24,12 @@ import java.net.URL;
 
 public class RequestActivity extends AppCompatActivity {
     String name;
+    String sname;
     String surname;
+    String date;
     String phone;
-    EditText etName, etSurname, etPhone;
+    String mail;
+    EditText etName, etSname,etSurname, etPhone, etDate, etMail;
     CheckBox mCheckBox;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +38,12 @@ public class RequestActivity extends AppCompatActivity {
         setTitle(R.string.makeRequest);
 
         etName = (EditText) findViewById(R.id.editTextName);
+        etSname = (EditText) findViewById(R.id.editTextSname);
         etSurname = (EditText) findViewById(R.id.editTextSurname);
+        etDate = (EditText) findViewById(R.id.editTextDate);
         etPhone = (EditText) findViewById(R.id.editTextPhone);
+        etMail = (EditText) findViewById(R.id.editTextMail);
+
 
         mCheckBox = (CheckBox)findViewById(R.id.checkBox);
     }
@@ -53,9 +60,12 @@ public class RequestActivity extends AppCompatActivity {
         protected Void doInBackground(Void... params) {
             try {
                 name = etName.getText().toString();
+                sname = etSname.getText().toString();
                 surname = etSurname.getText().toString();
                 phone = etPhone.getText().toString();
-                String myURL = "http://kesh.online/lead.php?name="+name+"&surname="+surname+"&phone="+phone;
+                mail = etMail.getText().toString();
+                date = etMail.getText().toString();
+                String myURL = "http://kesh.online/lead_mfo.php?name="+name+"&sname="+sname+"&surname="+surname+"&phone="+phone+"&email="+mail+"&bd="+date;
                 String parammetrs = "param1=1&param2=XXX";
                 byte[] data = null;
                 InputStream is = null;
@@ -125,7 +135,7 @@ public class RequestActivity extends AppCompatActivity {
         etName.getText().length();
         etSurname.getText().length();
         etPhone.getText().length();
-        if ((etName.getText().length()!=0) && (etSurname.getText().length()!=0) && (etPhone.getText().length()!=0)){
+        if ((etName.getText().length()!=0) && (etSurname.getText().length()!=0) && (etPhone.getText().length()!=0) && (etDate.getText().length()!=0) && (etMail.getText().length()!=0) && (etSname.getText().length()!=0)){
             if (mCheckBox.isChecked()) {
                 new SendLoginData().execute();
 //                Toast.makeText(RequestActivity.this, "ok", Toast.LENGTH_LONG).show();
